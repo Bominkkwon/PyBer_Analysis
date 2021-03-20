@@ -23,11 +23,26 @@ PyBer, a ride-sharing app company valued at $2.3 billion, has assigned a project
 
 ## Results
 
-![](analysis/Fig5.png)
-![](analysis/Fig6.png)
-![](analysis/Fig7.png)
-
 ```Python
 # Combine the data into a single dataset
 pyber_data_df = pd.merge(ride_data_df, city_data_df, how="left", on=["city", "city"])
+
+# Create the Suburban and Urabn, Suburban, Rural city DataFrames.
+urban_cities_df = pyber_data_df[pyber_data_df["type"] == "Urban"]
+suburban_cities_df = pyber_data_df[pyber_data_df["type"] == "Suburban"]
+rural_cities_df = pyber_data_df[pyber_data_df["type"] == "Rural"]
 ```
+
+![](analysis/Fig5.png) 
+
+("% of Total Fares by City Type" (Fig 5))
+```Python
+sum_fares_by_type = pyber_data_df.groupby(["type"]).sum()["fare"]
+total_fares = pyber_data_df["fare"].sum()
+type_percents = 100 * sum_fares_by_type / total_fares
+```
+
+![](analysis/Fig6.png)
+![](analysis/Fig7.png)
+
+
