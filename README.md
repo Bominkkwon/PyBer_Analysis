@@ -26,3 +26,8 @@ PyBer, a ride-sharing app company valued at $2.3 billion, has assigned a project
 ![](analysis/Fig5.png)
 ![](analysis/Fig6.png)
 ![](analysis/Fig7.png)
+
+```Python
+# Combine the data into a single dataset
+pyber_data_df = pd.merge(ride_data_df, city_data_df, how="left", on=["city", "city"])
+```
