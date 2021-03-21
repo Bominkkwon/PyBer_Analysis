@@ -6,8 +6,8 @@
 * [Project title](#project-title)
 * [Technologies](#technologies)
 * [Overview](#overview)
-* [Analysis](#analysis)
-
+* [Results](#results)
+* [Summary](#summary)
 
 
 
@@ -72,4 +72,22 @@ driver_percents = 100 * city_data_df.groupby(["type"]).sum()["driver_count"] /ci
 ```
 
 As "Fig 6" has shown, the demand for PyBer ride service is high in "Urban" areas-- in order to cover such high requests, more drivers are needed in "Urban" areas and the pie chart (Fig 7) is showing that 80.9% of total drivers have provided services in "Urban" areas during this period. There has been a noticeable trend that recognize the importance of demands for PyBer in "Urban" areas and its contributions to the company.
+
+
+## Summary
+
+
+![](analysis/data-Module-5-Challenge-Challenge_Summary_DataFrame.png)
+
+The days of owning a vehicle is fading away. Our future generations are adapting to the sharing economy, instead of buying and owning products, consumers are increasingly interested in leasing and sharing them-- this is why one of many reasons that companies like PyBer is high in demand and moving forward, will face a lot of competitions. In order to stay ahead of the curve, PyBer needs to innovate and use a data driven strategy. There are some recommendations that PyBer could use to imporve their company based on these given datasets:
+
+1. A lot of "Urban" riders are likely to be using PyBer multiple times per week or even per day-- PyBer could potentially utilitze this and create (Monthly/bi-weekly) subscription services with attractive prices. This will seem very appealing to a lot of urban commuters who does not want to use public transportations or those frequent urban riders who are looking to save on travel costs. This would only benefits the company if the newly created subscription services are restricted within a city.
+
+2. To improve the overall numbers of riders in "Suburban" areas, the company could utilize the current trends of green investments. PyBer could encourage those who use or interested in trying PyBer by providing attractive fares if they decided to ride such eco-friendly vehicles. In many suburban areas, inadequate transportation infrastructure is an issue and encouraging them to share their rides in green vehicles would give them more options than just owning a vehicle and deter them from purchasing a vehicle. This would also encourage those "Suburban" drivers to work for PyBer, because it would mean less or no cost for fuels.
+
+3. In "Rural" areas, it is difficult to make more investment to improve the numbers of riders and drivers-- since the issue is not just about the company nor the people there; it has a lot to do with market penetration. Some of them may not even own a cell phone or does not even know such riding share apps like "PyBer" exists. This is not something that the company can improve or change overnight. Rather than cutting back the riding services there, the company could utilize this to have different experimentations. Experimentation is a bit like innovation-- since a lot of companies are investing their time and energy to develop autonomous vehicles, PyBer could partner with them or get them to sponsor and try it out in "Rural" areas. 
+
+In my opinion, car ownership is so inefficient-- and creations of such "ride- sharing" applications are truly moving America away from being a car-dependent society. These recommendations were made based solely on those given datasets and I believe these would improve the company in many ways. 
+
+
 
