@@ -45,9 +45,24 @@ sum_fares_by_type = pyber_data_df.groupby(["type"]).sum()["fare"]
 total_fares = pyber_data_df["fare"].sum()
 type_percents = 100 * sum_fares_by_type / total_fares
 ```
-As the above pie chart is showing, more than half of total fares are charged in "Urban" areas and fares that were charged in "Rural" areas are less than 10% of fares charged in "Urban" areas.
+The sum of the fares for each city type are: 
+* Rural $4,327.93 
+* Suburban $19,356.33 
+* Urban $39,854.38
+In the pie chart above (labeled, "Fig 5"), more than half of the total fares has been charged in "Urban" areas and the fares that has been charged in "Rural" areas are a little more than 10% of the fares charged in "Urban" areas. One can conclude that the company has produced higher "revenue" in "Urban" areas compared to in "Rural" or "Suburban." 
 
 ![](analysis/Fig6.png)
+
+("% of Total Rides by City Type" (Fig 6))
+```Python
+pyber_data_df.groupby(["type"])
+pyber_data_df.groupby(["type"]).count()
+ride_percents = 100 * pyber_data_df.groupby(["type"]).count()["ride_id"] / pyber_data_df["ride_id"].count()
+```
+
+The total number of riders during this particular period is 2,375 and in the pie chart above (labeled, "Fig 6"), 68.4% of the total number of PyBer ride service has been used in "Urban" areas and 5.3% in "Rural" areas; and "Suburban" has the second most riders. One can conclude that such lack of PyBer riders in "Rural" areas is something that the company has to look into further because it could become problematic.
+
+
 ![](analysis/Fig7.png)
 
 
