@@ -49,6 +49,7 @@ The sum of the fares for each city type are:
 * Rural $4,327.93 
 * Suburban $19,356.33 
 * Urban $39,854.38
+
 In the pie chart above (labeled, "Fig 5"), more than half of the total fares has been charged in "Urban" areas and the fares that has been charged in "Rural" areas are a little more than 10% of the fares charged in "Urban" areas. One can conclude that the company has produced higher "revenue" in "Urban" areas compared to in "Rural" or "Suburban." 
 
 ![](analysis/Fig6.png)
@@ -65,4 +66,9 @@ The total number of riders during this particular period is 2,375 and in the pie
 
 ![](analysis/Fig7.png)
 
+("% of Total Drivers by City Type" (Fig 7))
+```Python
+driver_percents = 100 * city_data_df.groupby(["type"]).sum()["driver_count"] /city_data_df["driver_count"].sum()
+```
 
+As "Fig 6" has shown, the demand for PyBer ride service is high in "Urban" areas-- in order to cover such high requests, more drivers are needed in "Urban" areas and the pie chart (Fig 7) is showing that 80.9% of total drivers have provided services in "Urban" areas during this period. 
